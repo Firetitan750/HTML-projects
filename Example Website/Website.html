@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <! -- references the css file -->
+    <link rel="shortcut icon" type="image/jpg" href="example_image.png"/>
+<title>Website Test Lol</title> <! -- the title of the tab -->
+</head>
+<body>
+<aside>words</aside>
+<h1>This is a test</h1>
+<p style="border:2px solid Tomato;">idk what text to put here</p> <! -- colored text -->
+<a href="#end">Jump to end of page</a>
+
+<hr>
+
+<h2><b>This is also a test</b></h2>
+<p1>and <mark><sub>again </sub></mark>i have no idea what to put here</p1>
+
+<hr>
+
+<p style="background-color: rgb(12, 223, 223);">actually heres a image that you can click on</p>
+<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" title="I'm a tooltip"><img src="example_image.png" alt="image lol" width="400" height="200"></a> <! -- sned you to a link when clicked on and has a tooltip -->
+<p>cool right?</p> <! -- basic text -->
+<br style="line-height:30;"> <! -- makes 30 blank lines-->
+<p>not a rickroll trust me also you need to click top left corner for link to not rickroll</p>
+
+<map name="examplemap"> <! -- a map for clicking on when you click it send you to link -->
+  <area shape="rect" coords="0, 0, 100, 100" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">
+</map>
+<img src="example_image.png" alt="image" width="500" height="300" usemap="#examplemap">
+<br style="line-height:16;">
+
+<p>also not a rickroll</p>
+
+<map name="examplemap1"> <! -- makes you click and then alerts you before sending you to link -->
+    <area shape="rect" coords="0, 0, 100, 100" href="https://www.youtube.com/watch?v=xvFZjo5PgG0" onclick="rickrollalert()">
+</map>
+
+<img src="example_image.png" alt="image" width="500" height="300" usemap="#examplemap1"> <! -- actually uses the map -->
+<! -- a javascript script -->
+<script>
+function rickrollalert() {
+    alert("You didn't get rickrolled! :)");
+}
+</script>
+
+<br style="line-height: 10;">
+
+<picture>
+    <source media="(min-width: 650px)" srcset="Slime1.png">
+    <source media="(min-width: 465px)" srcset="Slime2.png">
+    <source media="(min-width: 235px)" srcset="Slime3.png">
+    <img src="Slime1.png" alt="image" style="width:auto">
+</picture>
+
+<br style="line-height: 10;">
+
+<ul style="list-style-type:square;">
+    <li>exampleword1</li>
+    <li>exampleword2</li>
+    <li>exampleword3</li>
+  </ul>
+<br style="line-height: 5;">
+<ol type="a">
+    <li>exampleword1</li>
+    <li>exampleword2</li>
+    <li>exampleword3</li>
+  </ol>
+<ol type="1" start="2">
+    <li>exampleword1</li>
+    <li>exampleword2</li>
+    <li>exampleword3</li>
+  </ol>
+<br style="line-height: 5;">
+<dl>
+    <dt>exampleword1</dt>
+    <dd>- exampledescription1</dd>
+    <dt>exampleword2</dt>
+    <dd>- exampledescription2</dd>
+  </dl>
+<ul>
+    <li>exampleword1</li>
+    <li>exampleword2
+      <ul>
+        <li>exampletype1</li>
+        <li>exampletype2</li>
+      </ul>
+    </li>
+    <li>exampleword1</li>
+  </ul>
+
+<p class="redoutline">test word sentance thing</p>
+<br style="line-height: 10;">
+<p id="testword">idtest</p>
+<br style="line-height: 30;">
+<iframe src="Website.html" style="height:200px;width:300px;border:none" title="a game"></iframe>
+
+<h2 id="end">End of page</h2>
+</body>
+</html>
